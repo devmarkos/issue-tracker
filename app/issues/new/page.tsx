@@ -18,8 +18,6 @@ const SimpleMDE = dynamic(
   {ssr:false}
 );
   
-
-
 type IssueForm = z.infer<typeof createIssueSchema>;
 
 export const NewIssuePage = () => {
