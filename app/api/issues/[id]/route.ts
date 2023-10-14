@@ -25,5 +25,5 @@ export async function PATCH(
         }
     })
 
-    return NextResponse.json(updatedIssue, {status: 200});
+    return NextResponse.json(updatedIssue);
 }
