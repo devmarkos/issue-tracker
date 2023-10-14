@@ -2,6 +2,8 @@ import prisma from "@/prisma/client";
 import { issueSchema } from "@/app/validationSchemas";
 import { NextRequest, NextResponse } from "next/server";
 
+//UPDATE
+
 export async function PATCH(
   request: NextRequest,
   { params }: { params: { id: string } }
@@ -28,6 +30,8 @@ export async function PATCH(
 
   return NextResponse.json(updatedIssue);
 }
+
+// DELETE
 
 export async function DELETE(
   request: NextRequest,
