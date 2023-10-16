@@ -4,7 +4,7 @@ import { Skeleton } from "@/app/components"
 import React from "react";
 import Link from "next/link";
 import { AiFillBug } from "react-icons/ai";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import classnames from "classnames";
 import { useSession } from "next-auth/react";
 import {
@@ -15,6 +15,7 @@ import {
   Flex,
   Text,
 } from "@radix-ui/themes";
+
 
 const NavBar = () => {
   return (
@@ -87,7 +88,7 @@ const AuthStatus = () => {
             <Text size="2">{session!.user!.email}</Text>
           </DropdownMenu.Label>
           <DropdownMenu.Item>
-            <Link href="/api/auth/signout">Log out</Link>
+            <Link href="/api/auth/signout" >Log out</Link>
           </DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Root>
