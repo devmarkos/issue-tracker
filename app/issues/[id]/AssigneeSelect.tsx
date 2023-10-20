@@ -17,9 +17,9 @@ const AssigneeSelect = () => {
   }, []);
 
   return (
-    <Select.Root defaultValue="apple">
+    <Select.Root>
       <Select.Trigger placeholder="Assign..." />
-      <Select.Content>
+      <Select.Content position="popper">
         <Select.Group>
           <Select.Label>Suggestions</Select.Label>
           {users.map((user) => (
